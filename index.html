@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <h1>Form Validation</h1>
+
+    <form action="" id="form">
+        <fieldset>
+          <div class="input">
+            <label for="email">Email:</label>
+            <input name="email" type="text" id="email" required />
+          </div>
+
+          <div class="input">
+            <label for="zip">Zip Code:</label>
+            <input name="zip" type="text" id="zip" required />
+          </div>
+
+          <div class="input">
+            <label for="password">Password:</label>
+            <input name="password" type="text" id="password" required />
+          </div>
+
+          <div class="input">
+            <label for="conf">Confirm Password:</label>
+            <input name="conf" type="text" id="conf" required />
+          </div>
+
+          <div class="input">
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="mexico">Mexico</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <div class="submit">
+          <button class="submitButton" type="submit">Add To Do</button>
+        </div>
+      </form>
+
+
+
+
+
+
+</body>
+</html>
