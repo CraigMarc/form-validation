@@ -14,17 +14,17 @@
         <fieldset>
           <div class="input">
             <label for="email">Email:</label>
-            <input name="email" type="text" id="email" required />
+            <input name="email" type="email" id="email" required />
           </div>
 
           <div class="input">
             <label for="zip">Zip Code:</label>
-            <input name="zip" type="text" id="zip" required />
+            <input name="zip" type="text" id="zip" pattern="[0-9]{5}" required />
           </div>
 
           <div class="input">
             <label for="password">Password:</label>
-            <input name="password" type="text" id="password" required />
+            <input  max="15" min="8" name="password" type="text" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required />
           </div>
 
           <div class="input">
